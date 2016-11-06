@@ -1,8 +1,17 @@
 from picamera import PiCamera
 from time import sleep
+import sys
 
-camera = PiCamera()
+def TakePictures(directory,numbers):
+    camera = PiCamera()
+    camera.start_preview()
+    sleep(2)
+    for i in range(numbers)
+        camera.capture(directory + '/image%s.jpg' % i)
+        print 'taking picture #' +i
+        sleep(1)
 
-camera.start_preview()
-sleep(10)
-camera.stop_preview()
+    camera.stop_preview()
+    return ;
+
+TakePictures(sys.argv[1],sys.argv[1])
