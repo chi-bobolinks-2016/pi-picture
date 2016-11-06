@@ -8,6 +8,7 @@ def TakePictures(directory,numbers):
     sleep(2)
     for i in range(numbers)
         camera.capture(directory + '/image%s.jpg' % i)
+        print 'taking picture #' +i
         sleep(1)
 
     camera.stop_preview()
