@@ -3,7 +3,7 @@ from time import sleep
 
 def PiCar(object):
 
-    def __init__(self):
+    def __init__():
         GPIO.setmode(GPIO.BOARD)
         self.pins = {'left'     : 11,
                      'right'    : 18,
