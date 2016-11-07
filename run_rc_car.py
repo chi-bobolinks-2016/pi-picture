@@ -8,8 +8,8 @@ def initialize():
             'forward'  : 12,
             'backward' : 16 }
     GPIO.setmode(GPIO.BOARD)
-    for pin in pins.attributes
-        GPIO.setup(pins[pin],GPIO.OUT)
+    for pin , pin_number in pins.iteritems()
+        GPIO.setup(pin_number,GPIO.OUT)
     return;
 
 def stop():
