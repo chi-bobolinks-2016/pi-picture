@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-def PiCar():
+def PiCar(object):
 
     def __init__(self):
         GPIO.setmode(GPIO.BOARD)
