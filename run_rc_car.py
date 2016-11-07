@@ -15,7 +15,7 @@ def PiCar():
 
     def stop():
         for pin_number in self.pins.itervalues():
-            GPIO.output((pins[pin],0)
+            GPIO.output(pin_number,0)
         return;
 
     def go_forward(time):
